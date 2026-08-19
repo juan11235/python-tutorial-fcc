@@ -63,7 +63,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description="Provides a personalized game experience."
     )
-
+    
     parser.add_argument(
         '-n', '--name', metavar='name',
         required=True, help='The name of the person playing the game.'
@@ -72,10 +72,3 @@ if __name__ == '__main__':
     args = parser.parse_args()
     guess_my_number = game(args.name)
     guess_my_number()
-
-
-            
-
-
-
-
